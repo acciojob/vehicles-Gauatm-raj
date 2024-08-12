@@ -2,24 +2,12 @@ package com.driver;
 
 public class F1 extends Car {
 
-    private int topSpeed;
 
-    public F1(String name, int capacity, int doors, int topSpeed,boolean isManual) {
-        super(name,4,doors,6,isManual,"race",2,capacity);
-        this.topSpeed = topSpeed;
-    }
+    public F1(String name, boolean isManual) {
+        super(name,4,2,6,isManual,"race",2);
+        //Use arbitrary values for parameters which are not mentioned
 
 
-
-
-//    public F1(String name,boolean isManual) {
-//        super(name,4,2,6,isManual,"race",2,2);
-//        //Use arbitrary values for parameters which are not mentioned
-//
-//
-//    }
-    public int getTopSpeed() {
-        return topSpeed;
     }
 
     public void accelerate(int rate){
