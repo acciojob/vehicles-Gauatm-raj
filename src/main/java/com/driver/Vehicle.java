@@ -5,15 +5,18 @@ public class Vehicle {
     private String name;
     private int currentSpeed;
     private int currentDirection;
+    private int capacity;
 
-    public Vehicle(String name) {
-        this.name=name;
-       // this.currentDirection=0;
-       // this.currentSpeed=0;
+    public Vehicle(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
     }
 
     public String getName() {
         return name;
+    }
+    public int getCapacity() {
+        return capacity;
     }
 
     public void setName(String name) {
