@@ -54,5 +54,9 @@ public class Vehicle {
         this.currentSpeed=0;
         System.out.println("stop method called - The vehicle is stopped");
     }
+    public void maintainSpeed(int speed,int dir){
+        this.currentSpeed=speed;
+        this.currentDirection=dir;
+    }
 
 }
